@@ -23,19 +23,19 @@ face-mask-detection/
 ├── haarcascade/
 │   └── haarcascade_frontalface_default.xml
 ├── model/
-│   └── mask_detector.h5          # saved after training
+│   └── mask_detector.h5          
 ├── logs/
 │   ├── training_log.csv
 │   ├── training_plot.png
 │   └── confusion_matrix.png
 ├── utils/
-│   └── download_dataset.py       # optional Kaggle downloader
-├── dataset/                      # populate before training
+│   └── download_dataset.py
+├── dataset/
 │   ├── with_mask/
 │   └── without_mask/
-├── train_mask_detector.py        # ← train the model
-├── detect_mask_video.py          # ← real-time webcam/video
-├── detect_mask_image.py          # ← static image inference
+├── train_mask_detector.py        
+├── detect_mask_video.py          
+├── detect_mask_image.py
 └── requirements.txt
 ```
 
