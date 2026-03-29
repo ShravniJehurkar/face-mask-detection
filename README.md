@@ -76,8 +76,8 @@ Download any face-mask image dataset and organise it like this:
 
 ```
 dataset/
-├── with_mask/      # images of people wearing masks
-└── without_mask/   # images of people without masks
+├── with_mask/      
+└── without_mask/
 ```
 
 **Recommended dataset (Kaggle):**
