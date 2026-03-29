@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# Model weights (large files — store in releases)
+model/*.h5
+model/*.model
+
+# Dataset (do not commit images)
+dataset/
+
+# Logs & outputs
+logs/
+*.png
+output*.jpg
+screenshot_*.png
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Kaggle API key
+kaggle.json
