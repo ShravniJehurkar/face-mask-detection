@@ -34,3 +34,4 @@ screenshot_*.png
 
 # Kaggle API key
 kaggle.json
+haarcascade/haarcascade_frontalface_default.xml 
