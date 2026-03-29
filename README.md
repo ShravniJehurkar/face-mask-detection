@@ -1,10 +1,10 @@
-# 😷 Real-Time Face Mask Detection
+# Real-Time Face Mask Detection
 
 A deep learning–powered computer vision system that detects **whether a person is wearing a face mask** in real time using a webcam or video file. Built with **MobileNetV2 transfer learning** + **OpenCV Haar Cascade** face detection.
 
 ---
 
-## 📌 Project Highlights
+## Project Highlights
 
 | Feature | Detail |
 |---|---|
@@ -16,7 +16,7 @@ A deep learning–powered computer vision system that detects **whether a person
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 face-mask-detection/
@@ -41,7 +41,7 @@ face-mask-detection/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1 — Clone & enter the repo
 
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🗃️ Dataset
+## Dataset
 
 Download any face-mask image dataset and organise it like this:
 
@@ -82,6 +82,7 @@ dataset/
 
 **Recommended dataset (Kaggle):**
 [Face Mask Dataset by omkargurav](https://www.kaggle.com/datasets/omkargurav/face-mask-dataset)
+https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
 Automated download (requires Kaggle API token at `~/.kaggle/kaggle.json`):
 
@@ -92,7 +93,7 @@ python utils/download_dataset.py
 
 ---
 
-## 🏋️ Training
+## Training
 
 ```bash
 python train_mask_detector.py
@@ -114,7 +115,7 @@ Training output saved to `logs/`:
 
 ---
 
-## 🎥 Real-Time Detection (Webcam)
+## Real-Time Detection (Webcam)
 
 ```bash
 python detect_mask_video.py
@@ -135,7 +136,7 @@ python detect_mask_video.py --source path/to/video.mp4
 
 ---
 
-## 🖼️ Static Image Detection
+## Static Image Detection
 
 ```bash
 python detect_mask_image.py --image photo.jpg
@@ -144,7 +145,7 @@ python detect_mask_image.py --image photo.jpg --output result.jpg
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 ```
 Input (224×224×3)
@@ -169,7 +170,7 @@ Dense(2, softmax)  →  [with_mask, without_mask]
 
 ---
 
-## 📊 Training Configuration
+## Training Configuration
 
 | Parameter | Value |
 |---|---|
@@ -182,7 +183,7 @@ Dense(2, softmax)  →  [with_mask, without_mask]
 
 ---
 
-## 🔍 Evaluation
+## Evaluation
 
 After training, the script automatically prints:
 
@@ -191,7 +192,7 @@ After training, the script automatically prints:
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 tensorflow==2.13.0
@@ -208,7 +209,7 @@ Pillow==10.0.0
 
 ---
 
-## 💡 Troubleshooting
+## Troubleshooting
 
 | Issue | Fix |
 |---|---|
@@ -219,13 +220,13 @@ Pillow==10.0.0
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free to use, modify, and distribute.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [Kaggle Face Mask Dataset](https://www.kaggle.com/datasets/omkargurav/face-mask-dataset)
 - [MobileNetV2 paper](https://arxiv.org/abs/1801.04381) — Sandler et al., 2018
